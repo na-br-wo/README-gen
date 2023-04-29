@@ -69,7 +69,11 @@ function writeToFile(fileName, data) {
   return fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
 
-// TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then(answers => {
+    const markdown = generateMarkdown(answers)
+    writeToFile('README.md', markdown)
+  })
+}
 
 init();
