@@ -1,5 +1,6 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
+const path = require('path')
 const generateMarkdown = require('./utils/generateMarkdown')
 
 const questions = [
@@ -63,11 +64,12 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  // using fs to write the README file in the current working directory
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+}
 
 // TODO: Create a function to initialize app
 function init() {}
 
-// Function call to initialize app
 init();
