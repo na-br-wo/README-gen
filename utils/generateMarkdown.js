@@ -31,8 +31,7 @@ function renderLicenseSection(license) {
     const link = renderLicenseLink(license)
 
     // return the following markdown code:
-    return `
-    ## License
+    return `## License
     This project is licensed under the ${badge}[${license}](${link}) license.
     `
   } else {
