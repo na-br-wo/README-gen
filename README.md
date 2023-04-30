@@ -5,6 +5,8 @@
   Download the repository from Github
   ## Usage
   Use the CLI to generate a README based on responses to questions
+  
+  [example](https://drive.google.com/file/d/1tDCtldBATRWv3Pk3Z9VeYhqbF5MZss5e/view?usp=sharing)
   ## How to Contribute
   Just reach out to me by email!
   ## Testing
