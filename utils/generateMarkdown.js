@@ -1,20 +1,26 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === 'None') {
-    return ''
-  } else if (license === 'GNU GPLv3') {
+   if (license === 'GNU GPLv3') {
     return `![GNU GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
   } else if (license === 'MIT License') {
     return `![MIT](https://img.shields.io/badge/License-MIT-blue.svg)`
   } else if (license === 'Apache License 2.0') {
     return `![Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
+  } else {
+    return ''
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === 'GNU GPLv3') {
+    return `https://www.gnu.org/licenses/gpl-3.0`
+  } else if (license === 'MIT License') {
+    return `https://opensource.org/licenses/MIT`
+  } else if (license === 'Apache License 2.0') {
+    return `https://opensource.org/licenses/Apache-2.0`
+  } else {
+    return ''
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
